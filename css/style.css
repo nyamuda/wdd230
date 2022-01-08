@@ -22,7 +22,7 @@ header {
 
 h1 {
     margin-left: 1rem;
-    color: #F8F8F8;
+    color: #ffffff;
 }
 
 footer {
@@ -32,7 +32,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    color: #F8F8F8;
+    color: #ffffff;
 }
 
 #note {
@@ -41,6 +41,6 @@ footer {
 
 #modified-info {
     font-size: 0.9rem;
-    color: #fada5e;
+    color: #ffff00;
     margin-top: -0.2rem;
 }
