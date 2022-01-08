@@ -41,6 +41,7 @@ footer {
 
 #modified-info {
     font-size: 0.9rem;
-    color: #fdff00;
+    color: #ffff;
     margin-top: -0.2rem;
+    font-style:italic;
 }
