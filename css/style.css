@@ -16,6 +16,16 @@ header {
     padding: 0.5rem 0 0.5rem 1rem;
 }
 
+.lesson-title {
+    display:flex;
+    flex-direction:column;
+    
+}
+.lesson-title p {
+    margin-left: 1rem;
+    color: #ffffff;
+    font-size:1.2rem
+}
 #profile-img {
     width: 100px;
 }
@@ -44,4 +54,79 @@ footer {
     color: #ffff;
     margin-top: -0.2rem;
     font-style:italic;
+}
+
+
+.photo-block {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photo-container img {
+    width: 100%;
+    padding-left: 0.3rem;
+}
+
+.design-description {
+    padding-left: 0.3rem;
+    color: #008080;
+}
+
+.photo-container a {
+    margin-bottom: 0.5rem;
+    padding-left: 0.3rem;
+}
+
+.design-title {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+    background-color: #008080;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    padding-left: 0.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    padding-left: 0.3rem;
+}
+
+@media (min-width:768px) {
+    .photo-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 6rem;
+        width: 95%;
+    }
+    .photo-container {
+        width: 40%;
+    }
+}
+
+@media (min-width:1020px) {
+    .photo-container {
+        width: 30%;
+    }
+    .photo-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        column-gap: 5%;
+        width: 95%;
+    }
 }
