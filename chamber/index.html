@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <style>
-
+        #weather-title {
+            font-size: 1.2rem;
+        }
+        
+        .weather {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        
+        .hero-image {
+            width: 100%;
+        }
+        
+        .icons {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -19,7 +34,7 @@
     <header>
         <nav class="desk-nav">
             <div class="logo-text">
-                <img src="images/LogoMakr-0CdsIX.png" alt="logo" width="150px">
+                <img src="images/LogoMakr-0CdsIX.webp" alt="logo" width="150px">
                 <p>Cape Town <span>Chamber of Commerce</span></p>
             </div>
             <div class="nav-links">
@@ -29,8 +44,8 @@
                 <a href="">Contact</a>
             </div>
             <div class="icons-container">
-                <img class="icons" src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128304.png?token=exp=1644160523~hmac=e21df8a5036ff5a825739d63ca0992a4" alt="facebook-icon">
-                <img class="icons" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1644160638~hmac=6f9d83dbcd08d34e472c87c155e40886" alt="linkedin-icon">
+                <img class="icons" src="images/facebook (2).png" alt="facebook-icon">
+                <img class="icons" src="images/linkedin (2).png" alt="linkedin-icon">
             </div>
         </nav>
 
@@ -44,8 +59,8 @@
 
                 <div class="menu-social">
                     <div class="icons-container">
-                        <img class="icons" src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128304.png?token=exp=1644160523~hmac=e21df8a5036ff5a825739d63ca0992a4" alt="facebook-icon">
-                        <img class="icons" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1644160638~hmac=6f9d83dbcd08d34e472c87c155e40886" alt="linkedin-icon">
+                        <img class="icons" src="images/facebook (2).png" alt="facebook-icon">
+                        <img class="icons" src="images/linkedin (2).png" alt="linkedin-icon">
                     </div>
 
                     <img class="mobile-menu" src="images/hamburger.png" alt="menu" width="40px">
@@ -69,14 +84,25 @@
 
         <div class="main-content hero">
             <p>Hero with site name and call to action</p>
+            <picture>
+                <source srcset="images/wdd230-org_3_960x.jpg" media="(min-width: 960px)" />
+                <source srcset="images/wdd230-org_2_720x.jpg" media="(min-width: 720px)" />
+                <img class="hero-image" src="images/wdd230-org_1_480x.jpg" alt="hero image" />
+            </picture>
+
         </div>
 
         <div class="main-content event">
             <p>Event</p>
+
         </div>
 
         <div class="main-content weather">
-            <p>Weather</p>
+            <p id="weather-title">Weather</p>
+            <p>Clear <span id="temp">17</span>&#8451;</p>
+            <hr>
+            <p>Speed: <span id="speed">23</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
         </div>
 
         <div class="main-content news">
@@ -109,7 +135,7 @@
 
         <div class="footer-info">
             <div id="footer-logo" class="logo-text">
-                <img src="images/LogoMakr-0CdsIX.png" alt="logo" width="150px">
+                <img src="images/LogoMakr-0CdsIX.webp" alt="logo" width="150px">
                 <p>Cape Town <span>Chamber of Commerce</span></p>
             </div>
 
@@ -134,6 +160,7 @@
 
 
     <script src="js/chambers.js"></script>
+    <script src="js/windchill.js"></script>
 
 </body>
 
