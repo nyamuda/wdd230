@@ -178,3 +178,33 @@ footer {
     align-items: center;
     justify-content: flex-start;
 }
+
+figure img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+figure img:hover {
+    box-shadow: 0 0 50px #333;
+}
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure figcaption {
+    width: 100%;
+    text-align: left;
+}
+
+
+.discover-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    margin: auto;
+}
