@@ -35,15 +35,18 @@ fetch("https://raw.githubusercontent.com/pnyamuda/wdd230/main/chamber/data.json"
             let phone = document.createElement("p");
             phone.classList.add("card-phone");
             phone.innerHTML = element.phone
-            let website = document.createElement("p");
-            website.classList.add("card-website");
-            website.innerHTML = element.website;
+            let websiteLink = document.createElement("a");
+            websiteLink.classList.add("card-website");
+            websiteLink.setAttribute("href", element.website);
+            websiteLink.innerHTML = element.website;
+            let websiteContainer = document.createElement("p");
+            websiteContainer.appendChild(websiteLink);
 
 
             card.appendChild(image);
             card.appendChild(address);
             card.appendChild(phone);
-            card.appendChild(website);
+            card.appendChild(websiteContainer);
 
             cardContainer.appendChild(card);
 

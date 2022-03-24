@@ -386,3 +386,13 @@ tr:nth-child(even) {
    
 }
 
+td a {
+    color:blue;
+}
+
+.card p a {  
+    color:blue;
+}
+
+
+
