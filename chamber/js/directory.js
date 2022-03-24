@@ -14,3 +14,13 @@ listIcon.addEventListener('click', () => {
     listContainer.style.display = "block"
 
 })
+
+
+fetch("https://github.com/pnyamuda/wdd230/blob/main/chamber/data.json", {
+        mode: 'no-cors'
+    })
+    .then(response => {
+        return response.json();
+    }).then(data => {
+        console.log(data);
+    })
