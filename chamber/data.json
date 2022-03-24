@@ -1,0 +1,92 @@
+[{
+        "name": "Fendi",
+        "address": "10 Adderley Street, Cape Town",
+        "phone": "(+27) 5182 5511",
+        "website": "https://www.fendi.com",
+        "img": "https://images.unsplash.com/photo-1590874315261-788881621f7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxvZ29zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+
+    {
+        "name": "Mercedes-Benz",
+        "address": "115 Kloof Street, City Bowl, Cape Town",
+        "phone": "(+27) 0555 2511",
+        "website": "https://www.mercedes-benz.co.za",
+        "img": "https://images.unsplash.com/photo-1629753883864-565512de7fe4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+
+
+    {
+        "name": "McDonald's",
+        "address": "66 Victoria Road, Cape Town",
+        "phone": "(+27) 6699 0191",
+        "website": "https://www.mcdonalds.co.za/",
+        "img": "https://images.unsplash.com/photo-1631054399813-0092e2adde4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1jZG9uYWxkJ3MlMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+
+
+    {
+        "name": "BMW",
+        "address": "55 South Link Road, Cape Town",
+        "phone": "(+27) 4151 7715",
+        "website": "https://www.bmw.co.za/en/index.html",
+        "img": "https://images.unsplash.com/photo-1557053964-937650b63311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ym13JTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+
+
+    {
+        "name": "Nike",
+        "address": "405 Southern Hills Drive, Cape Town",
+        "phone": "(+27) 5321 1731",
+        "website": "https://www.nike.com/za",
+        "img": "https://images.unsplash.com/photo-1608541737042-87a12275d313?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmlrZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+
+    {
+        "name": "Slack",
+        "address": "55 Claremont, Cape Town",
+        "phone": "(+27) 5519 7788",
+        "website": "https://slack.com/",
+        "img": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8a2VsbG9nZ3MlMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name": "Coca Cola",
+        "address": "61 Rosebank, Cape Town",
+        "phone": "(+27) 6610 3748",
+        "website": "https://www.coca-cola.co.za/",
+        "img": "https://images.unsplash.com/photo-1554283180-58b016d34e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name": "Burger King",
+        "address": "108 Mowbray, Cape Town",
+        "phone": "(+27) 7715 6666",
+        "website": "https://www.burgerking.co.za/",
+        "img": "https://images.unsplash.com/photo-1647792484729-b022e89a9644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YnVyZ2VyJTIwa2luZyUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name": "Toyota",
+        "address": "413 Newlands, Cape Town",
+        "phone": "(+27) 7156 7513",
+        "website": "https://www.toyota.co.za/",
+        "img": "https://images.unsplash.com/photo-1546545817-27f0fb006153?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dG95b3RhJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name": "John Deere",
+        "address": "33 Milnerton, Cape Town",
+        "phone": "(+27) 733 5177",
+        "website": "https://www.deere.com/sub-saharan/en/index.html",
+        "img": "https://images.unsplash.com/photo-1618346976725-71ee4a1ecc89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8am9obiUyMGRlZXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "name": "Samsung",
+        "address": "207 Table View, Cape Town",
+        "phone": "(+27) 2122 5331",
+        "website": "https://www.samsung.com/za/",
+        "img": "https://images.unsplash.com/photo-1623588958271-8c019027feed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Ftc3VuZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+
+
+
+
+
+
+]

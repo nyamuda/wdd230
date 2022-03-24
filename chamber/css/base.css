@@ -289,3 +289,100 @@ select,
     justify-content: space-between;
 }
 
+
+
+
+/* DIRECTORY CSSS */
+#directory-h1 {
+    text-align:center;
+}
+.card-container {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom:3rem;
+}
+
+.card {
+    width: 300px;
+    box-shadow: -5px -5px 10px;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: left;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 0.9rem;
+}
+
+.card-img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.card-address,
+.card-phone,
+.card-website {
+    margin-bottom: -0.8rem;
+}
+
+#list {
+    display: none;
+    margin: 3rem 0 3rem 0;
+    
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+}
+
+thead tr {
+    background-color: #89CFF0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+tfoot tr {
+    background-color: #89CFF0;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #003366;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #add8e6;
+}
+
+.colored-cell {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.select-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.select-list img {
+    padding: 0 1rem 0 1rem;
+    cursor: pointer;
+   
+}
+

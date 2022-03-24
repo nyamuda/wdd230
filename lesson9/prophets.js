@@ -15,6 +15,7 @@ fetch(requestURL)
 
 
 
+
 function displayProphets(prophet) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
