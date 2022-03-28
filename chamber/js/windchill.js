@@ -3,6 +3,7 @@ const tempDegree = document.getElementById("temp");
 let windChill = document.getElementById("wind-chill");
 let icon = document.getElementById("icon");
 let weatherStatus = document.getElementById("weather-status");
+let weatherBlock = document.getElementById("weather-block");
 
 
 let lat = -33.9258;
@@ -13,6 +14,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&app
     .then(res => res.json())
     .then(data => {
         console.log(data);
+        weatherBlock.style.display = "block";
         theTemperature = Math.floor(Number(data.main.temp));
         theSpeed = Number(data.wind.speed);
         weatherStatus.innerHTML = data.weather[0].main;
