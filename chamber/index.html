@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/large.css">
     <style>
         #weather-title {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
         
         .weather {
             background-color: #4CAF50;
             color: #ffffff;
+            text-align: left;
+            line-height: 0.5rem;
         }
         
         .hero-image {
@@ -25,6 +27,14 @@
         
         .icons {
             cursor: pointer;
+        }
+        
+        #icon {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: -2rem;
+            margin-bottom: -2rem;
         }
     </style>
 </head>
@@ -99,9 +109,11 @@
 
         <div class="main-content weather">
             <p id="weather-title">Weather</p>
-            <p>Clear <span id="temp">17</span>&#8451;</p>
+            <img id="icon" src="" alt="">
+            <p id="weather-status"></p>
+            <p><span id="temp"></span> &#8451;</p>
             <hr>
-            <p>Speed: <span id="speed">23</span> km/h</p>
+            <p>Speed: <span id="speed"></span> km/h</p>
             <p>Wind Chill: <span id="wind-chill"></span></p>
         </div>
 
