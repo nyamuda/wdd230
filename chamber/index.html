@@ -40,6 +40,57 @@
         #weather-block {
             display: none;
         }
+        
+        #hero-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #4CAF50;
+        }
+        
+        #bottom-left {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        #spotlights-container {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0 1rem 0rem 1rem;
+        }
+        
+        #spotlights-container div div {
+            width: auto;
+            box-shadow: none;
+            padding-bottom: 0rem;
+            padding-top: 0rem;
+            border: 1px solid white;
+            margin-top: 0.5rem;
+        }
+        
+        #event-info,
+        #join-title,
+        #news-title {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+        
+        .event,
+        .join,
+        .news {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        
+        #event-date,
+        #news-date {
+            text-align: left;
+            font-size: 0.7rem;
+        }
     </style>
 </head>
 
@@ -52,7 +103,8 @@
                 <p>Cape Town <span>Chamber of Commerce</span></p>
             </div>
             <div class="nav-links">
-                <a href="index.html">Discover</a>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
                 <a href="">Contact</a>
@@ -83,7 +135,8 @@
 
 
             <div class="mobile-links">
-                <a href="index.html">Discover</a>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
                 <a href="">Contact</a>
@@ -96,18 +149,19 @@
 
     <main>
 
-        <div class="main-content hero">
-            <p>Hero with site name and call to action</p>
+        <div id="hero-container" class="main-content hero">
+            <p id="bottom-left">Welcome to Cape Town Chamber of Commerce</p>
             <picture>
-                <source srcset="images/wdd230-org_3_960x.jpg" media="(min-width: 960px)" />
-                <source srcset="images/wdd230-org_2_720x.jpg" media="(min-width: 720px)" />
-                <img class="hero-image" src="images/wdd230-org_1_480x.jpg" alt="hero image" />
+                <source srcset="images/resize-960px.jpg" media="(min-width: 960px)" />
+                <source srcset="images/resize-720px.jpg" media="(min-width: 720px)" />
+                <img class="hero-image" src="images/resize-480px.jpg" alt="hero image" />
             </picture>
 
         </div>
 
         <div class="main-content event">
-            <p>Event</p>
+            <p id="event-info">Assertiveness, Personal Productivity and Time Management - Webinar</p>
+            <p id="event-date">June 29, 2022 | 10:30 AM - 04:30 PM</p>
 
         </div>
 
@@ -122,23 +176,51 @@
         </div>
 
         <div class="main-content news">
-            <p>News Release</p>
+            <p id="news-title">Latest News</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus placerat tellus sed lobortis ornare. Vivamus malesuada pretium lobortis. Integer sit amet lacus vel nunc gravida suscipit. Duis nulla augue, consectetur nec libero et, varius
+                cursus elit. Sed bibendum venenatis vestibulum.</p>
+            <p id="news-date">29/03/22</p>
         </div>
 
         <div class="main-content join">
-            <p>Join</p>
+            <p id="join-title">Become a Member</p>
+            <input type="button" value="Join">
         </div>
 
-        <div class="main-content spotlights">
+        <div id="spotlights-container" class="main-content spotlights">
             <div class="spotlight1">
-                <p>Spotlight1</p>
+                <div class="card">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1618346976725-71ee4a1ecc89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8am9obiUyMGRlZXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="logo">
+                    <p class="card-address">33 Milnerton, Cape Town</p>
+                    <p class="card-phone">(+27) 733 5177</p>
+                    <p>
+                        <a class="card-website" href="https://www.deere.com/sub-saharan/en/index.html">https://www.deere.com</a>
+                    </p>
+
+                </div>
             </div>
 
             <div class="spotlight2">
-                <p>Spotlight2</p>
+                <div class="card">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1590874315261-788881621f7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxvZ29zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="logo">
+                    <p class="card-address">10 Adderley Street, Cape Town</p>
+                    <p class="card-phone">(+27) 5182 5511</p>
+                    <p>
+                        <a class="card-website" href="https://www.fendi.com">https://www.fendi.com</a>
+                    </p>
+
+                </div>
             </div>
             <div class="spotlight3">
-                <p>Spotlight3</p>
+                <div class="card">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1608541737042-87a12275d313?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmlrZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="logo">
+                    <p class="card-address">405 Southern Hills Drive, Cape Town</p>
+                    <p class="card-phone">(+27) 5321 1731</p>
+                    <p>
+                        <a class="card-website" href="https://www.nike.com/za">https://www.nike.com/za</a>
+                    </p>
+
+                </div>
             </div>
         </div>
 

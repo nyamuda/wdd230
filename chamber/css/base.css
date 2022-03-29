@@ -123,13 +123,9 @@ main {
     width: 98%;
     padding: 0.5rem;
     margin: auto;
+    height:auto;
 }
 
-.spotlight2,
-.spotlight1,
-.spotlight3 {
-    border: 1px solid grey;
-}
 
 .spotlight3,
 .join {
