@@ -1,5 +1,9 @@
 let spotlightsContainer = document.getElementById("spotlights-container");
 
+
+
+let join = () => window.location.href = "join.html";
+
 let randomNum = val => Math.floor(Math.random() * val);
 
 
