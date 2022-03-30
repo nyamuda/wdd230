@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cape Town Chamber</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <style>
 
-    </style>
 </head>
 
 <body>
-
     <header>
         <nav class="desk-nav">
             <div class="logo-text">
@@ -66,56 +63,44 @@
         </nav>
         <p id="current-year" class="date-header">Date</p>
     </header>
+    <div class="contain">
 
-    <main>
+        <div class="wrapper">
 
-        <div id="hero-container" class="main-content hero">
-            <p id="bottom-left">Welcome to Cape Town Chamber of Commerce</p>
-            <picture>
-                <source srcset="images/resize-960px.jpg" media="(min-width: 960px)" />
-                <source srcset="images/resize-720px.jpg" media="(min-width: 720px)" />
-                <img class="hero-image" src="images/resize-480px.jpg" alt="hero image" />
-            </picture>
+            <div class="form">
+                <h4>GET IN TOUCH</h4>
+                <h2 class="form-headline">Send us a message</h2>
+                <form class="the-form" id="submit-form" action="">
+                    <p>
+                        <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                        <small class="name-error"></small>
+                    </p>
+                    <p>
+                        <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                        <small class="name-error"></small>
+                    </p>
+                    <p class="full-width">
+                        <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                        <small></small>
+                    </p>
+                    <p class="full-width">
+                        <textarea minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                        <small></small>
+                    </p>
 
+                    <input type="button" value="Submit">
+
+                </form>
+            </div>
+
+            <div class="form-contacts contact-wrapper">
+                <p class="company-title">Cape Town Chamber of Commerce</p>
+                <p class="company-address">44 Adderley Street, Cape Town, South Africa</p>
+                <p class="company-phone">Phone: +27 21 332-0001</p>
+                <p class="company-email">Email: ptnrlab@gmail.com</p>
+            </div>
         </div>
-
-        <div class="main-content event">
-            <p id="event-info">Assertiveness, Personal Productivity and Time Management - Webinar</p>
-            <p id="event-date">June 29, 2022 | 10:30 AM - 04:30 PM</p>
-
-        </div>
-
-        <div id="weather-block" class="main-content weather">
-            <p id="weather-title">Weather</p>
-            <img id="icon" src="" alt="">
-            <p id="weather-status"></p>
-            <p><span id="temp"></span> &#8451;</p>
-            <hr>
-            <p>Speed: <span id="speed"></span> km/h</p>
-            <p>Wind Chill: <span id="wind-chill"></span></p>
-        </div>
-
-        <div class="main-content news">
-            <p id="news-title">Latest News</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Vivamus placerat tellus sed lobortis ornare. Vivamus malesuada pretium lobortis. Integer sit amet lacus vel nunc gravida suscipit. Duis nulla augue, consectetur nec libero et, varius
-                cursus elit. Sed bibendum venenatis vestibulum.</p>
-            <p id="news-date">29/03/22</p>
-        </div>
-
-        <div class="main-content join">
-            <p id="join-title">Become a Member</p>
-            <input type="button" value="Join">
-        </div>
-
-        <div id="spotlights-container" class="main-content spotlights">
-
-        </div>
-
-
-
-    </main>
-
-
+    </div>
     <footer>
 
         <div class="footer-info">
@@ -144,10 +129,8 @@
     </footer>
 
 
-    <script src="js/home.js"></script>
     <script src="js/chambers.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="js/discover.js"></script>
+
 
 </body>
 

@@ -113,5 +113,15 @@
     #spotlights-container div div img {
         border-radius:10%;
     }
+
+     /* CONTACT FORM */
+
+ .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.wrapper>* {
+    padding: 2em 2em;
+}
     
 }

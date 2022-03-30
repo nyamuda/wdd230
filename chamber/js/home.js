@@ -1,24 +1,6 @@
-let cardIcon = document.getElementById("card-icon");
-let listIcon = document.getElementById("list-icon");
-let cardContainer = document.getElementById("card");
-let listContainer = document.getElementById("list");
-let theTable = document.getElementById("table");
 let spotlightsContainer = document.getElementById("spotlights-container");
 
-
-
-cardIcon.addEventListener('click', () => {
-    cardContainer.style.display = "grid";
-    listContainer.style.display = "none"
-})
-
-listIcon.addEventListener('click', () => {
-    cardContainer.style.display = "none";
-    listContainer.style.display = "block"
-
-})
-
-
+let randomNum = val => Math.floor(Math.random() * val);
 
 
 
@@ -78,22 +60,33 @@ let createList = (company) => {
 }
 
 
+
+
+
+
+
 fetch("https://raw.githubusercontent.com/pnyamuda/wdd230/main/chamber/data.json")
     .then(response => {
         return response.json()
     }).then(info => {
-        //creating cards for all companies;
-        info.data.forEach(element => {
-            //CARD CREATION
-            createCard(element, cardContainer);
+        //gathering three  random elements from the data
+        //the elements are for use in the home page- spotlight;
+        let randomCompanies = [];
+        let length = info.data.length;
+        for (let i = 0; i < 3; i++) {
+            randomCompanies.push(info.data[randomNum(length)])
+        }
+        console.log(randomCompanies);
+        //creating cards for only three companies
 
+        randomCompanies.forEach((val, indx) => {
+            //creating the spotlight container first
+            let spotlightContainer = document.createElement('div');
+            spotlightContainer.classList.add(`spotlight${indx+1}`);
+            //now creating the spotlight---the card
+            createCard(val, spotlightContainer);
 
-            //LIST CREATION
+            spotlightsContainer.appendChild(spotlightContainer);
 
-            createList(element)
-
-
-
-
-        });
+        })
     })
