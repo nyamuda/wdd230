@@ -392,3 +392,97 @@ td a {
 
 
 
+/* HOME PAGE */
+
+
+#spotlights-container div div {
+    width: auto;
+    box-shadow: none;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+   
+    margin-top: 0.5rem;
+}
+
+
+#spotlights-container div div img {
+
+}
+
+
+#weather-title {
+    font-size: 1.4rem;
+}
+
+.weather {
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-align: left;
+    line-height: 0.5rem;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+#icon {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+
+#weather-block {
+    display: none;
+}
+
+#hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #4CAF50;
+}
+
+#bottom-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#spotlights-container {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0 1rem 0;
+}
+
+#event-info,
+#join-title,
+#news-title {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.event,
+.join,
+.news {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+#event-date,
+#news-date {
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+
+
+

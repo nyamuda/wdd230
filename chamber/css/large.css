@@ -1,5 +1,6 @@
 @media (min-width: 1020px) {
     main {
+        display:grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -52,6 +53,11 @@
 .card-container {
     grid-template-columns: repeat(3, minmax(250px, 1fr));
    
+}
+
+/* HOME PAGE */
+#spotlights-container {
+    padding: 1rem;
 }
     
 }
