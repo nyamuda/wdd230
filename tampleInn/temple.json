@@ -1,0 +1,33 @@
+[{
+        "name": "Aba Nigeria Temple",
+        "address": "72-80 Okpu-Umuobo Rd, Ab Abia State, Nigeria",
+        "telephone": "(234) 80-3903-4810",
+        "temple_closure": ["Friday, 8 April 2022", "Saturday, 20 August 2022", "Monday, 5 September 2022 - Monday, 2 January 2023"]
+
+    },
+
+    {
+        "name": "Gilbert Arizona Temple",
+        "address": "3301 S Greenfield Rd, Gilbert AZ 85297, United States ",
+        "telephone": "(1) 480-822-5000",
+        "temple_closure": ["Saturday, 1 October 2022", "Saturday, 1 October 2022", "Saturday, 24 December 2022"]
+
+    },
+
+    {
+        "name": "Helsinki Finland Temple",
+        "address": "Leppäsillantie 3 FI-02620 Espoo Finland",
+        "telephone": "(358) 9-849-37110",
+        "temple_closure": ["Monday, 21 March 2022 - Monday, 30 May 2022", "Monday, 19 September 2022 - Monday, 3 October 2022", "Friday, 23 December 2022 - Monday, 26 December 2022"]
+
+    },
+
+    {
+        "name": "Birmingham Alabama Temple",
+        "address": "1927 Mount Olive Blvd Gardendale AL 35071 United States",
+        "telephone": "(1) 205-631-3444",
+        "temple_closure": ["Monday, 4 July 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022"]
+
+    }
+
+]
