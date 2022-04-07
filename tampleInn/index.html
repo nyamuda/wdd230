@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Are you ready?</title>
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <style>
+        .home-services {
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            padding-left: 1rem;
+            width: 95%;
+            margin: auto;
+        }
+        
+        .home-services div {
+            margin-top: 2rem;
+            padding: 0 0.5rem 0 0.5rem;
+        }
+        
+        .home-services-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        /*
+        .home-first-title,
+        .home-second-title {
+            font-size: 2rem;
+            text-align: left;
+            margin-left: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .home-second-title {
+            margin-top: 1rem;
+            margin-bottom: -2rem;
+        }*/
+        
+        ul {
+            list-style-type: circle;
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+        
+        .weather {
+            text-align: left;
+            border: 1px solid #ffff;
+            color: #ffff;
+            padding: 1rem;
+            border-radius: 10px 0 10px 0;
+            line-height: 2rem;
+            margin-left: 1rem;
+        }
+        
+        #weather-block {
+            display: none;
+        }
+        
+        #icon {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: -2rem;
+            margin-bottom: -2rem;
+        }
+        
+        .icons-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        input[type=button] {
+            cursor: pointer;
+            margin: 0;
+            padding: .5em 2em;
+            background: #636363;
+            border: none;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 400;
+        }
+        
+        .join {
+            margin-left: 1rem;
+            border: 1px solid #ffff;
+            width: fit-content;
+            padding: 1rem;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        #join-title {
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            text-align: start;
+            padding: 1.5rem;
+        }
+        
+        @media (min-width:768px) {
+            .home-services {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                align-items: baseline;
+            }
+            .weather {
+                margin-left: 0rem;
+            }
+        }
+        
+        @media (min-width: 1020px) {
+            .home-services {
+                display: grid;
+                grid-template-columns: 2fr 2fr 1fr;
+                width: 100%;
+                align-items: baseline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+
+        <!-- START HEADER  -->
+        <header>
+            <div class="bg-img">
+                <div class="container">
+
+                    <div class="container-header-txt">
+                        <div class="header-txt">
+                            <h1>Heaven</h1>
+                            <h2>of comfort and accessibility</h2>
+                        </div>
+
+
+                    </div>
+
+                    <div class="topnav" id="navbar">
+                        <a href="#wrapper">Home</a>
+                        <!-- <a href="#gallery">Gallery</a> -->
+                        <a href="#contact">Temple</a>
+
+                        <a href="#contact">Reservation</a>
+                        <!-- ▾ -->
+                        <div class="dropdown">
+                            <button class="dropbtn">Services
+          <i class="fa fa-caret-down"></i>
+        </button>
+                            <div class="dropdown-content">
+                                <a href="https://github.com/AgataWo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a href="https://codepen.io/agatawo" target="_blank" rel="noopener noreferrer">Codepen</a>
+                                <a href="http://www.linkedin.com/in/agata-w%C3%B3jcik-563149220" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+        <div class="content">
+
+
+            <div class="home-services">
+                <div>
+                    <p class="home-services-title">Specialized Services</p>
+                    <ul>
+                        <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                        <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                        <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                        <li>Temple history themed reception and sitting area</li>
+                        <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                        <li>A family search center that supports family search and ordinance work</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="home-services-title">Free Amenities</p>
+                    <ul>
+                        <li>Breakfast</li>
+                        <li>Exercise/workout room</li>
+                        <li>Indoor pool</li>
+                        <li>WiFi high-speed internet access and smart TVs</li>
+                        <li>Parking</li>
+                        <li>Temple shuttle</li>
+                        <li>Family history consultation and family ordinance card service</li>
+                    </ul>
+                </div>
+                <div id="weather-block" class="main-content weather">
+                    <p id="weather-title">Weather</p>
+                    <img id="icon" src="" alt="">
+                    <p id="weather-status"></p>
+                    <p><span id="temp"></span> &#8451;</p>
+                    <hr>
+                    <p>Speed: <span id="speed"></span> km/h</p>
+                    <p>Wind Chill: <span id="wind-chill"></span></p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- START BANNER -->
+            <div class="banner-image">
+                <img class='bannerImg' src="https://images.unsplash.com/photo-1543702404-38c2035462ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                <div class="banner-text">
+                    <h1 class="banner">Never underestimate the strength that comes from gathering </h1>
+                    <h3 class="banner"> -- Stephen W. Owen</h3>
+
+                    <div id="contact" style="position:absolute; left:80px; top:150px;"></div>
+                </div>
+            </div>
+            <!-- END BANNER -->
+            <!-- START CONTACT -->
+
+            <div class="join">
+                <p id="join-title">Make a Reservation</p>
+                <input onclick="join()" type="button" value="Join">
+            </div>
+
+            <div class="contact-container">
+                <div style="text-align:center">
+                    <h2>Contact</h2>
+                    <!-- <p>Swing by for a cup of coffee, or leave a message:</p> -->
+                </div>
+                <div class="contact-row">
+                    <div class="contact-column">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=898&q=80" style="width:100%">
+                    </div>
+                    <div class="contact-column">
+                        <form action="">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your email...">
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px"></textarea>
+                            <input type="submit" value="Submit" id="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTACT -->
+        </div>
+
+        <footer>
+
+            <p>&copy;2022 Temple Inn & Suites</p>
+            <div class="icons-container">
+                <img class="icons" src="images/facebook (2).png" alt="facebook-icon" width="60px">
+                <img class="icons" src="images/linkedin (2).png" alt="linkedin-icon" width="60px">
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
