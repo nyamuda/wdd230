@@ -1,0 +1,34 @@
+@media (min-width:768px) { 
+    .service-image {
+        width:25rem;
+    }
+
+    .form {
+        width:60%;
+    }
+
+    #navbar {
+       flex-direction:row;
+        align-items: center;
+    }
+
+    .mobile-nav {
+        display:none;
+    }
+    #desktop-menu {
+        display:block;
+    }
+
+    /* SERVICES PAGE */
+
+
+    .home-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-items: baseline;
+    }
+    .weather {
+        margin-left: 0rem;
+    }
+}

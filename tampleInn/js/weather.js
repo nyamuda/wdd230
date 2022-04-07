@@ -6,8 +6,8 @@ let weatherStatus = document.getElementById("weather-status");
 let weatherBlock = document.getElementById("weather-block");
 
 
-let lat = -33.9258;
-let lon = 18.4232;
+let lat = 38.981;
+let lon = -77.100;
 let theTemperature = 0;
 let theSpeed = 0;
 fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f1d7ae8851fb29af1d3925be1c9bb900&units=metric`)
