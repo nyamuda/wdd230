@@ -61,6 +61,7 @@ body {
     top:0rem;
    
   }
+
   
   .topnav a {
     float: left;
@@ -790,12 +791,17 @@ input[type=button] {
  display:block;
  height:auto;
  margin-top:1rem;
+ 
 
+}
+
+.services-container {
+  margin-top:4rem
 }
 
 .reception-title {
   text-align:left;
-  margin-left:1rem;
+  margin-left:2rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
