@@ -77,7 +77,7 @@ let createList = (company) => {
 }
 
 
-fetch("https://raw.githubusercontent.com/pnyamuda/wdd230/main/tampleInn/temple.json")
+fetch("https://raw.githubusercontent.com/pnyamuda/wdd230/main/templeInn/temple.json")
     .then(response => {
         return response.json()
     }).then(info => {
