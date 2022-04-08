@@ -5,7 +5,7 @@
     .home-services {
         display: grid;
         grid-template-columns: 2fr 2fr 1fr;
-        width: 100%;
         align-items: baseline;
+        column-gap: 1rem;
     }
 }

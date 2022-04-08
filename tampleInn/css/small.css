@@ -238,12 +238,7 @@ body {
   
   
   
-  @media only screen and (max-width: 700px) {
-    .modal-content {
-      width: 100%;
-      max-width: 85%;
-    }
-  }
+  
   
   
   /* START BANNER */
@@ -551,6 +546,8 @@ footer {
 
 .list-points {
   list-style: disc;
+  margin-left:2rem;
+  margin-top:0.5rem
 }
 
 
